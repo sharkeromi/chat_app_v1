@@ -67,7 +67,7 @@ class LogInScreen extends StatelessWidget {
                       email: authenticationController.email.value,
                       password: authenticationController.password.value);
                   if (oldUser != null) {
-                    Get.to(() => const ChatScreen());
+                    Get.to(() => ChatScreen());
                   }
                 } catch (e) {
                   print(e);
